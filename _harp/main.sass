@@ -1,4 +1,4 @@
-// @import _harp/components/harp-bourbon/scss/_bourbon.scss
+@import _harp/components/harp-bourbon/scss/_bourbon.scss
 
 $highlight: #C6538C
 $text-color: #A4976A
@@ -9,8 +9,7 @@ $spray: #DBCB5E
 body
     background: $bg-image
     height: 100%
-
-    // font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif
+    font-family: $georgia
     font-size: 1.4em
     text-align: center
 
@@ -38,13 +37,12 @@ body
     margin-top: -50px
     z-index: 100
 
-h1,h2,h3,h4,h5,h6,p
-    // font-family: 'Avenir', 'Verdana', 'Roboto', sans-serif
-    // font-family: 'Avenir', 'Verdana', 'Roboto', sans-serif
+h1,h2,h3,h4,h5,h6
     font-family: 'Kaushan Script', cursive
-    a
-        text-decoration: none
-        color: $highlight
+
+a
+    text-decoration: none
+    color: $highlight
 
 h1,h3
     display: block
