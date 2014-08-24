@@ -1,0 +1,58 @@
+// @import _harp/components/harp-bourbon/scss/_bourbon.scss
+
+$highlight: #C6538C
+$text-color: #A4976A
+$bg-image: #211D11
+$bermuda: #6B919E
+$spray: #DBCB5E
+
+body
+    background: $bg-image
+    height: 100%
+
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif
+    font-size: 1.4em
+    text-align: center
+
+    color: $text-color
+
+.deep-woods
+    position: relative
+    background: url('images/deep-in-the-woods-crop.png') no-repeat center top
+    background-size: contain
+    width: auto
+    min-height: 2000px
+    margin-top: -200px
+
+.gradient
+    position: absolute
+    background-image: -webkit-linear-gradient(RGBA(33, 29, 17, 0),RGBA(33, 29, 17, 1))
+    height: 1200px
+    bottom: 0
+    left: 0
+    right: 0
+
+.copy
+    position: relative
+    margin-top: -50px
+    z-index: 100
+
+h1,h2,h3,h4,h5,h6,p
+    font-family: 'Avenir', 'Verdana', 'Roboto', sans-serif
+    a
+        text-decoration: none
+        color: $highlight
+
+h1,h3
+    display: block
+    font-size: 3.1em
+    font-style: italic
+    line-height: 1.5
+    color: $highlight
+h3
+    font-size: 2.1em
+    font-weight: normal
+
+p
+    line-height: 1.8
+    display: block
