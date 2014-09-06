@@ -70,3 +70,28 @@ i
     cursor: pointer
     &:hover
         color: $highlight
+
+#arrow
+    position: fixed
+    bottom: 60px
+    @include transform(rotate(45deg))
+    width: 60px
+    height: 60px
+    border-bottom: 5px solid rgba(255,255,255,1)
+    border-right: 5px solid rgba(255,255,255,1)
+    z-index: 100
+    left: 50%
+    margin-left: -30px
+
+#arrow.fadeOut
+    @include animation(fadeOut 2s)
+    @include animation-delay(1.5s)
+
+@include keyframes(fadeOut)
+    0%
+        bottom: 250px
+        border-color: rgba(255,255,255,0)
+    40%
+        border-color: rgba(255,255,255,0.75)
+    100%
+        border-color: rgba(255,255,255,0)
